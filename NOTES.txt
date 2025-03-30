@@ -1,0 +1,117 @@
+How does python works?
+----------------------
+
+Python Compiler/Interpreter
+
+Python code -> Python compiler -> Intermediate code (bytecode) -> Python Virtual machine -> Operating System
+
+In summary, python is both a compiler and interpreter
+
+python data types
+-----------------
+
+NOTE: all the numbers are stored in the form of 0 and 1.
+
+1. int 
+for e.g. 100, -100, 10_500_000 -> this is same as 10,500,000 (it is used for better readability)
+
+2. float 
+for e.g. 3.14, -1.3, 1_234.567_876 -> this is same as 1,234.567,876
+
+NOTE: not all exact decimal numbers have an exact float representation
+
+What are objects?
+----------------
+
+-> entities created by python
+    -> they have state (data)
+    -> they have methods (functionality)
+
+-> they often represent real world things
+
+for e.g. 
+
+car (state)
+-> brand -> Toyota
+-> model -> Prius LE
+-> no of doors -> 4
+-> model_year -> 2020
+-> odometer -> 5_402
+
+car (functionality)
+-> accelerate()
+-> brake()
+-> set_cruise_control()
+-> left_turn_signal_on()
+
+Integers are objects
+-------------------
+-> it has state i.e. the value of the Integers
+-> but it also has functionality
+    -> knows how to add itself to another integer
+
+like Integers, Floats are also Objects. 
+               ------
+
+So in conclusion, everything in python is an object
+
+-> it has state 
+-> it has functionality 
+
+and state and functionality collectively are called as attributes.
+                                                       -----------
+
+Mutability and Immutability
+----------------------------
+
+-> an object is mutable if it's interal state can be changed
+    -> one or more data attributes can be changed
+
+-> an object is immutable if its internal state cannot be changed 
+    -> the state of the objects is "set in stone"
+
+in python many data types are immutable,
+for e.g. integers, floats, booleans, strings
+
+while some are mutable,
+for e.g. lists, dictionaries, sets 
+
+variables
+---------
+we often need to label objects with some names 
+
+-> reminds of us what the object is used for 
+-> allows us to use the same object in multiple parts of the code
+
+assigning name,
+to assign a label to an object we use the assignment operator = 
+
+account_balance = 1000.0
+apy = 0.25
+
+-> we are assigning the label apy to the object 0.25
+-> we say apy is a reference to the float object 0.25
+
+-> the symbol apy is just a label currently pointing to (or referencing) the object 0.25
+
+so, why the term variable?
+
+-> over time, which object a symbol references can change 
+    a = 100 -> a is referencing the object 100
+    later in the program...
+    a = True -> a is now referencing the object True
+
+-> the state of the object the symbol references can change (mutate)
+
+how variable assignment happens?
+
+apy = 0.25
+
+-> python evaluates the RHS first
+    -> then it "assigns" that result to the symbol in the LHS
+    (the LHS becomes a named reference to whatever results from the RHS)
+
+Generally, RHS could be a more complex expression than just a literal 
+
+balance = 1000.0 - 50.0
+circ = 2 * 3.14 * 1.5
