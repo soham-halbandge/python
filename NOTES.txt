@@ -115,3 +115,57 @@ Generally, RHS could be a more complex expression than just a literal
 
 balance = 1000.0 - 50.0
 circ = 2 * 3.14 * 1.5
+
+-> in both the cases the RHS is fully evaluated first
+
+variable naming 
+---------------
+
+-> case sensitive i.e. apr and Apr are different
+-> start with underscore (_) or letter (a-z A-z)
+    but followed by any number of underscore or letters or digits (0-9)
+-> cannot be reserved words (True False etc) 
+
+Arithmetic Operators
+--------------------
+
+Unary Operators
+- Unary Minus -10
++ Unary Plus +10
+
+Binary Operators
++ Addition
+- Subtraction
+* Multiplication
+/ Division
+** Exponentiation for e.g. 2 ** 4 is 2 * 2 * 2 * 2
+// integer division (it returns the quotient of type integer)
+% modulo operator (it returns the remainder after division)
+
+Comparison Operators
+--------------------
+
+compares two things and yeilds a boolean result
+
+== -> equality 
+!= -> not equal
+> -> greater 
+>= -> greater than or equal to 
+< -> less than 
+<= -> less than or equal to 
+
+Boolean Operators
+-----------------
+
+we have two boolean values: True and False
+three basic operators: and, or, not
+
+-> not is an unary operator 
+
+-> and, or is binary operator 
+
+if a is true, not a is False
+if b is false, not b is True 
+
+a and b is true, if both a and b are true else false 
+a or b is false, if both a and b are false else true
